@@ -11,10 +11,10 @@ jobs:
       run:
         working-directory: backend
         name: Execute the PyCharm security test
-        steps:
-          - uses: actions/checkout@v4
-          - name: Run PyCharm Security
-            uses: tonybaloney/pycharm-security@master
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run PyCharm Security
+        uses: tonybaloney/pycharm-security@master
   build_and_test:
     runs-on: ubuntu-latest
     defaults:
